@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Mundo Gamer</title>
+    <!-- Incluye Bootstrap 5 desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Tu archivo CSS personalizado -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- Encabezado con título y moneda -->
+<header class="title-container">
+    <img src="img/moneda.png" alt="Moneda" class="coin img-fluid">
+    <h1>Welcome to Isaac's world</h1>
+    <img src="img/moneda.png" alt="Moneda" class="coin img-fluid">
+</header>
+<audio controls autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Menú de navegación -->
+<nav>
+    <ul class="d-flex justify-content-center">
+        <li><a href="#juegos"><button class="btn-custom">Juegos Favoritos</button></a></li>
+        <li><a href="#personajes"><button class="btn-custom">Personajes Favoritos</button></a></li>
+        <li><a href="#peliculas"><button class="btn-custom">Películas Favoritas</button></a></li>
+        <li><a href="#videos"><button class="btn-custom">Videos Favoritos</button></a></li>
+    </ul>
+</nav>
+
+<!-- Perfil y carrusel de imágenes -->
+<section id="profile" class="text-center section-background">
+    <div class="section-title-container">
+        <img src="img/nombre.jpeg" class="img-fluid" alt="Nombre Isaac">
+    </div>
+    <div class="container py-5">
+        <div class="row pt-5">
+            <div class="col-md-12">
+                <div class="card text-left p-4">
+                    <h2 class="card-title">¡Hola! Soy Isaac</h2>
+                    <p class="card-text">Tengo 5 años y soy un niño muy curioso y aventurero. Me encanta jugar en mi Nintendo Switch, especialmente juegos de carreras y aventuras. Pero también disfruto salir al aire libre para correr, jugar a la pelota y explorar el parque. Siempre quiero compartir mis juegos y aventuras con otros niños, porque creo que jugar juntos es lo más divertido. ¡Me emociona mucho conocer nuevos amigos y aprender de ellos también!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carrusel de imágenes -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/foto2.jpeg" class="d-block w-100 img-carousel img-fluid" alt="Isaac jugando">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto3.jpeg" class="d-block w-100 img-carousel img-fluid" alt="Isaac sonriendo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/isaac.jpeg" class="d-block w-100 img-carousel img-fluid" alt="Isaac en el parque">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Sección de juegos -->
+<section id="juegos" class="section-background">
+    <div class="title-container">
+        <div class="section-title-container">
+            <img src="img/Juegos-Favoritos-10-1-2024.png" class="img-fluid" alt="Juegos Favoritos">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/minecraft.png" class="img-fluid" alt="Minecraft">
+                    <h3>Minecraft</h3>
+                    <p>Un juego donde puedes construir lo que quieras, ¡el límite es tu imaginación!</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/mario.png" class="img-fluid" alt="Mario Odyssey">
+                    <h3>Mario Odyssey</h3>
+                    <p>Acompaña a Mario en sus aventuras para salvar a la princesa Peach.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/astrobot.png" class="img-fluid" alt="Astrobot">
+                    <h3>Astrobot</h3>
+                    <p>Ayuda a Astrobot en su misión espacial con realidad virtual.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/kirby.png" class="img-fluid" alt="Kirby Forgotten Land">
+                    <h3>Kirby Forgotten Land</h3>
+                    <p>Explora una fábrica abandonada en este emocionante juego de aventura.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de personajes favoritos -->
+<section id="personajes" class="section-background">
+    <div class="section-title-container">
+        <img src="img/PERSONAJES-FAVORITOS-10-1-2024.png" class="img-fluid" alt="Personajes Favoritos">
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="img/pikachu.png" class="card-img-top img-fluid" alt="Pikachu">
+                    <div class="card-body">
+                        <h5 class="card-title">Pikachu</h5>
+                        <p class="card-text">Pikachu es un Pokémon eléctrico, siempre listo para la aventura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/megaman.png" class="card-img-top img-fluid" alt="Megaman">
+                    <div class="card-body">
+                        <h5 class="card-title">Megaman</h5>
+                        <p class="card-text">Megaman es un héroe robot que lucha por la justicia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/Switch-mario.png" class="card-img-top img-fluid" alt="Mario Switch">
+                    <div class="card-body">
+                        <h5 class="card-title">Mario</h5>
+                        <p class="card-text">El clásico héroe de Nintendo, siempre listo para salvar a la princesa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/switch-minecraft.png" class="card-img-top img-fluid" alt="Minecraft Switch">
+                    <div class="card-body">
+                        <h5 class="card-title">Minecraft</h5>
+                        <p class="card-text">Construye tu propio mundo y deja volar tu imaginación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5">
+    <p>&copy; 2024 Magdalena Inalaf G. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
